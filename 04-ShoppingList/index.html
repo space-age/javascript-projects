@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping List</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="list-section">
+      <!-- Form -->
+      <form class="list-form">
+        <h2>Shopping List</h2>
+        <p class="alert"></p>
+        <div class="list-control">
+          <input type="text" id="item" placeholder="e.g. juice" />
+          <button type="submit" class="submit-btn">submit</button>
+        </div>
+      </form>
+
+      <!-- List -->
+      <div class="list-container">
+        <div class="list-list"></div>
+      </div>
+      <button class="clear-btn">clear items</button>
+    </section>
+    <div class="author-container">
+      <h2>Creator:<span class="author-name"> Christopher Casillas</span></h2>
+    </div>
+    <!-- Javascript -->
+    <script src="script.js"></script>
+  </body>
+</html>
