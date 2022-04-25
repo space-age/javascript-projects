@@ -1,0 +1,186 @@
+/*
+  - FONT SIZE SYSTEM (px)
+  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+    - SPACING SYSTEM (px)
+  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+  */
+
+/* Restarting all default values */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; by default 1 rem = 16px; But now it is 1 rem = 10px */
+  /*[10px / 16px] = 0.625 = 62.5% OR [desired_pixels] / 16px = value * 100 = percentage_desired*/
+  /* Percentage of users browser font-size settings */
+  font-size: 62.5%;
+
+  /* Background color */
+  background-color: #e9ecef;
+
+  /* Background image */
+  /* background-image: url(color-background.jpg);
+  background-size: cover;
+  background-attachment: fixed; */
+}
+
+main {
+  min-height: 3.2rem;
+  display: grid;
+  place-items: center;
+}
+
+.main-container {
+  width: 100rem;
+  max-width: 70rem;
+  margin-bottom: 3.2rem;
+}
+
+.title {
+  text-align: center;
+  font-size: 4.4rem;
+  margin-bottom: 4rem;
+}
+
+.underline {
+  height: 0.25rem;
+  width: 10rem;
+  background: #339af0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.data-container {
+  background-color: #f8f9fa;
+  border-radius: 0.25rem;
+  text-align: center;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 10px 10px #adb5bd;
+  transition: all 0.3s linear;
+}
+
+.data-container:hover {
+  box-shadow: 0 10px 10px #666;
+}
+
+.img-container {
+  position: relative;
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+
+/* To customize image */
+.img-container::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #339af0;
+  position: absolute;
+  bottom: 0.2rem;
+  right: 0.5rem;
+  border-radius: 50%;
+}
+
+#person-img {
+  width: 100%;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+}
+
+#scientist {
+  margin-bottom: 1.25rem;
+  font-size: 3.6rem;
+  font-weight: 700;
+}
+
+#job {
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  margin-bottom: 1.25rem;
+  font-weight: 600;
+  color: #339af0;
+}
+
+#info {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 550;
+  color: #495057;
+  line-height: 1.5;
+}
+
+/* Styling link */
+a:link {
+  font-size: 1.8rem;
+  color: #4dabf7;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #4dabf7;
+}
+
+a:hover {
+  color: #339af0;
+  font-weight: bold;
+}
+
+a:active {
+  background-color: #aaa;
+  font-style: italic;
+}
+
+.prev-btn,
+.next-btn {
+  color: #339af0;
+  font-size: 4rem;
+  background: transparent;
+  border-color: transparent;
+  margin: 0.5rem 1rem;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  font-weight: 700;
+  color: #1864ab;
+}
+
+.random-btn {
+  font-size: 1.6;
+  font-weight: 700;
+  background-color: #d0ebff;
+  color: #1864ab;
+  padding: 0.25rem 0.5rem;
+  text-transform: uppercase;
+  border-radius: 0.25rem;
+  border-color: #339af0;
+  cursor: pointer;
+}
+
+.random-btn:hover {
+  background: #339af0;
+  color: white;
+}
+
+.author {
+  font-size: 2.4rem;
+  /* padding: 10rem; */
+}
+
+.author-name {
+  color: #339af0;
+  font-size: 3.6rem;
+  padding-bottom: 3.2rem;
+}
