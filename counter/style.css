@@ -1,0 +1,79 @@
+/*
+  - FONT SIZE SYSTEM (px)
+  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+    - SPACING SYSTEM (px)
+  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+  */
+
+/* Restarting all default values */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; by default 1 rem = 16px; But now it is 1 rem = 10px */
+  /*[10px / 16px] = 0.625 = 62.5% OR [desired_pixels] / 16px = value * 100 = percentage_desired*/
+  /* Percentage of users browser font-size settings */
+  font-size: 62.5%;
+  background-image: url(./images/color-background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+main {
+  /* display: grid; */
+  /* place-items: center; */
+  text-align: center;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 18rem;
+  color: #212529;
+}
+
+.author {
+  font-size: 2.4rem;
+  padding: 10rem;
+}
+
+.author-name {
+  color: #e64980;
+  font-size: 3.6rem;
+}
+
+#value {
+  font-size: 16rem;
+  font-weight: 600;
+  color: #212529;
+}
+
+.button {
+  display: inline-block;
+  text-transform: uppercase;
+  background: #e03131;
+  color: #222;
+  font-size: 3rem;
+  font-weight: 600;
+  padding: 0.375rem 0.75rem;
+  margin: 0.5rem;
+
+  border: 1px solid;
+  box-shadow: 0 5px 7px #777;
+  border-radius: 0.5rem;
+
+  cursor: pointer;
+}
+
+.increase,
+.decrease {
+  background: #845ef7;
+}
+
+.button:hover {
+  color: white;
+  background: #2b8a3e;
+}
