@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="src/css/style.css" />
+    <script type="module" defer src="src/js/controller.js"></script>
+
+    <title>API Project</title>
+  </head>
+  <body>
+    <h1>REST Countries Project</h1>
+    <div class="nav-tabs-container">
+      <button class="tabs-main-button" id="all-countries" value="all">
+        All Countries
+      </button>
+      <div class="tabs-dropdown">
+        <button class="tabs-main-button tabs-dropdown-button">Region</button>
+        <div class="tabs-dropdown-content">
+          <button class="tabs-button" id="africa" value="region/africa">
+            Africa
+          </button>
+          <button class="tabs-button" id="americas" value="region/americas">
+            Americas
+          </button>
+          <button class="tabs-button" id="asia" value="region/asia">
+            Asia
+          </button>
+          <button class="tabs-button" id="europe" value="region/europe">
+            Europe
+          </button>
+          <button class="tabs-button" id="oceania" value="region/oceania">
+            Oceania
+          </button>
+        </div>
+      </div>
+      <div class="tabs-dropdown">
+        <button class="tabs-dropdown-button">Sub-Region</button>
+        <div class="tabs-dropdown-content">
+          <button
+            class="tabs-button"
+            id="South-America"
+            value="subregion/South America"
+          >
+            South America
+          </button>
+          <button
+            class="tabs-button"
+            id="North-America"
+            value="subregion/North America"
+          >
+            North America
+          </button>
+          <button
+            class="tabs-button"
+            id="Central-America"
+            value="subregion/Central America"
+          >
+            Central America
+          </button>
+          <button
+            class="tabs-button"
+            id="Southern-Europe"
+            value="subregion/Southern Europe"
+          >
+            Southern Europe
+          </button>
+          <button
+            class="tabs-button"
+            id="Eastern-Asia"
+            value="subregion/Eastern Asia"
+          >
+            Eastern Asia
+          </button>
+        </div>
+      </div>
+      <div class="tabs-dropdown">
+        <button class="tabs-dropdown-button">Common Languages</button>
+        <div class="tabs-dropdown-content">
+          <button class="tabs-button" id="english" value="lang/english">
+            English
+          </button>
+          <button class="tabs-button" id="mandarin" value="lang/mandarin">
+            Mandarin
+          </button>
+          <button class="tabs-button" id="spanish" value="lang/spanish">
+            Spanish
+          </button>
+          <button class="tabs-button" id="french" value="lang/french">
+            French
+          </button>
+          <button class="tabs-button" id="arabic" value="lang/arabic">
+            Arabic
+          </button>
+        </div>
+      </div>
+      <div class="tabs-dropdown">
+        <button class="tabs-dropdown-button">Common Currency</button>
+        <div class="tabs-dropdown-content">
+          <button
+            class="tabs-button"
+            id="dollar"
+            value="currency/united states dollar"
+          >
+            U.S. Dollars
+          </button>
+          <button class="tabs-button" id="european-euro" value="currency/euro">
+            European Euro
+          </button>
+          <button
+            class="tabs-button"
+            id="japanese-yen"
+            value="currency/japanese yen"
+          >
+            Japanese Yen
+          </button>
+          <button
+            class="tabs-button"
+            id="british-pound"
+            value="currency/british pound"
+          >
+            British Pound
+          </button>
+          <button
+            class="tabs-button"
+            id="swiss-france"
+            value="currency/swiss franc"
+          >
+            Swiss France
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="input-container">
+      <form class="input-form">
+        <input
+          class="search-field"
+          type="search"
+          id="inputID"
+          placeholder="Search for countries..."
+          title="Type in a country"
+        />
+      </form>
+    </div>
+    <main class="main-container">
+      <!-- <div class="countries">
+        <article class="country">
+          <img class="country__img" src="https://flagcdn.com/w320/mx.png" />
+          <div class="country__data">
+            <h3 class="country__name">Country</h3>
+            <h4 class="country__region">Capital</h4>
+            <p class="country__row"><span>👫</span>Population</p>
+            <p class="country__row"><span>🗣️</span>Language</p>
+            <p class="country__row"><span>💰</span>Currency</p>
+            <p class="country__row"><span>🌎</span>Map</p>
+            <p class="country__row">
+              <a href="https://www.google.com/maps"><span>🌎</span>Map</a>
+            </p>
+          </div>
+        </article>
+      </div> -->
+    </main>
+    <div class="pagination">
+      <!-- <button class="btn--inline pagination__btn--prev">
+        <svg class="search__icon">
+          <use href="src/img/icons.svg#icon-arrow-left"></use>
+        </svg>
+        <span>Page 1</span>
+      </button>
+      <button class="btn--inline pagination__btn--next">
+        <span>Page 3</span>
+        <svg class="search__icon">
+          <use href="src/img/icons.svg#icon-arrow-right"></use>
+        </svg>
+      </button> -->
+    </div>
+  </body>
+</html>

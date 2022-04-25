@@ -1,0 +1,21 @@
+{
+  "name": "countries",
+  "version": "1.0.0",
+  "description": "REST Countries API",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "Christopher Casillas",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.3.1",
+    "sass": "^1.49.7",
+    "vm-browserify": "^1.1.2"
+  },
+  "dependencies": {
+    "core-js": "^3.21.1",
+    "regenerator-runtime": "^0.13.9"
+  }
+}
