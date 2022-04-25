@@ -6,8 +6,8 @@ Projects using **Vanilla Javascript**, **HTML**, and **CSS**
 
 1. **Counter**
    - Counter buttons to increase, decrease, reset value
-2. **Reviews**
-   - Slider with scientitst information
+2. **Slide Show**
+   - Slide Show of famous scientists
 3. **Calculator**
    - Calculator with basic arithmatic operations
 4. **Shopping List**
